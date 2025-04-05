@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: 'cinzel';
+    src: url('./assets/fonts/cinzel-variablefont_wght.woff2') format('woff2'),
+         url('./assets/fonts/cinzel-variablefont_wght.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: "source-sans-pro";
+    src: url("./assets/fonts/sourcesanspro-regular.woff2") format('woff2'),
+         url("./assets/fonts/sourcesanspro-regular.woff") format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+@theme{
+    --font-cinzel: "cinzel", serif;
+    --font-source-sans-pro: "source-sans-pro", sans-serif;
+    
+}
