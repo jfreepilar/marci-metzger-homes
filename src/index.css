@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 @font-face {
-    font-family: 'cinzel';
+    font-family: "cinzel";
     src: url('./assets/fonts/cinzel-variablefont_wght.woff2') format('woff2'),
          url('./assets/fonts/cinzel-variablefont_wght.woff') format('woff');
     font-weight: normal;
@@ -22,5 +22,26 @@
 @theme{
     --font-cinzel: "cinzel", serif;
     --font-source-sans-pro: "source-sans-pro", sans-serif;
+    --color-overlay: oklch(50% 0.1 240 / 0.5)
+}
+
+h2 {
+    font-family: "cinzel";
+    font-size: 2rem;
+}
+
+h3 {
+    font-family: "source-sans-pro";
+    font-size: 1.75rem;
+}
+
+p {
+    font-family: "source-sans-pro";
+}
+
+@media screen and (max-width: 768px) {
+    h2, h3 {
+        font-size: 1.5rem;
+    }
     
 }
