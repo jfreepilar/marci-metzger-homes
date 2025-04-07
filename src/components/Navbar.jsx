@@ -34,7 +34,7 @@ export default function Navbar() {
   }, [dispatch]);
 
   return (
-    <div className={`${isScrolled ? "fixed top-[-130px] w-full bg-[rgba(156,163,175,0.7)] transform translate-y-[130%] md:translate-y-[30%] transition-all duration-300 ease-in-out z-30 pt-6 shadow-silver shadow-2xl" : "bg-transparent"} w-full flex flex-col items-center`}>
+    <div className={`${isScrolled ? "fixed top-[-130px] w-full bg-[rgba(156,163,175,0.7)] transform translate-y-[130%] md:translate-y-[30%] transition-all duration-300 ease-in-out z-50 pt-6 shadow-silver shadow-2xl" : "bg-transparent"} w-full flex flex-col items-center`}>
       <nav className={`hidden md:flex gap-6 relative p-4 ${isScrolled ? "pt-9 pb-0" : "py-2"}`}> 
       {mainNavItems.map((item, index) => (
         <li key={index} className="mx-4 list-none mt-8">
