@@ -15,7 +15,6 @@ export const socialMediaIcons = [
 
 const responsiveWidth = "w-full lg:w-1/3 mb-8";
 
-
 const Footer = () => {
     return (
         <footer className="relative bg-[url('assets/images/background-3.png')] bg-cover bg-no-repeat min-h-fit text-white font-source-sans-pro py-6">
@@ -23,8 +22,8 @@ const Footer = () => {
 
             <div className={`${padding} relative flex flex-col lg:flex-row z-20 py-10 gap-8 lg:gap-0`}>  
                 <div className="w-full lg:w-1/4">
-                    <p className="text-2xl !font-cinzel">Marci Metzger - <br/> THE RIDGE REALTY GROUP</p>
-                    <p>Dedicated to making your real estate journey smooth and successful. Trust Marci for expert advice and personalized support every step of the way.</p>
+                    <p className="text-2xl text-center !font-cinzel">Marci Metzger - <br/> THE RIDGE REALTY GROUP</p>
+                    <p className="text-center">Dedicated to making your real estate journey smooth and successful. Trust Marci for expert advice and personalized support every step of the way.</p>
                 </div>
 
                 <nav className={`${responsiveWidth} flex flex-col items-center  gap-4`}>
@@ -48,7 +47,7 @@ const Footer = () => {
                     </div>
                 </div>
 
-                <div className="">
+                <div>
                     <p className="text-xl text-center mb-4">Membership</p>
                     <div className={`${responsiveWidth} flex justify-around min-w-fit ml-[-30px] md:ml-0`}>
                         {brokerageObjects.map((image, index) => (

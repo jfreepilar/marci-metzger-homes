@@ -35,15 +35,15 @@ export default function Home() {
         <section className="text-white mb-20 lg:mb-10">
           <div className={`relative flex flex-col lg:flex-row bg-[url('assets/images/background-2.png')] bg-cover h-[880px] lg:h-[700px]`}>
             <div className="flex flex-col items-center justify-center pt-15 mb-30 ps-24">
-              <div className="absolute top-0 left-0 w-full h-full bg-black opacity-30 z-0"></div>
-              <div className="relative z-10">
+              <div className="absolute top-0 left-0 w-full h-full bg-[rgba(27,27,27,0.4)] z-0"></div>
+              <div className="relative z-30">
                 <h1 className="font-cinzel text-4xl lg:text-6xl font-bold">MARCI MERTZGER <br/> THE RIDGE REALTY GROUP</h1>
                 <h2 >PAHRUMP REALTOR</h2>
                 <Button buttonProps={{text: "CALL NOW", backgroundColor: "bg-gray-400", textColor: "text-white"}}/>
               </div>
             </div>
 
-            <div className="relative flex w-full justify-center lg:w-1/2 mt-[-80px] sm:mt-[-40px] md:mt-[-52px] lg:mt-[122px]">
+            <div className="relative flex w-full justify-center lg:w-1/2 mt-[-80px] sm:mt-[-40px] md:mt-[-52px] lg:mt-[122px] mr-[150px]">
               <img src={marciMetzger} 
                     alt="Photo of Ms. Marci Metzger"
                     className="h-[578px]"/>
@@ -58,7 +58,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <img src={smoke} alt="Smoke" className="h-[320px] mt-[-320px] relative z-20  w-full" />
+          <img src={smoke} alt="Smoke" className="h-[320px] mt-[-320px] relative z-20 w-full" />
         </section>
 
         <section className={`${padding} pb-4`}>
@@ -66,7 +66,7 @@ export default function Home() {
           <div className="w-full flex flex-col lg:flex-row justify-around items-center gap-4">
             {getItSoldObject.map((item, index) => (
               <div key={index}
-                   className="relative w-[400px] shadow-black shadow-lg overflow-hidden group">
+                   className="relative w-[400px] shadow-black shadow-lg overflow-hidden group rounded-t-lg">
                 <img
                   src={item.image}
                   alt={item.title}
@@ -247,7 +247,7 @@ export default function Home() {
         </section>
 
         <section className={`${padding} my-18`}>
-          <h2 className="text-center font-bold">Contact Us</h2>
+          <h2 className="text-center font-bold">Contact or Visit Us</h2>
           <div className="flex flex-col lg:flex-row justify-content-evenly mt-6 gap-4">
             <div className="max-w-xl mx-auto p-6 bg-gray-50 rounded-lg shadow-md">
               <h3 className="mb-6 text-center text-black">Send an Email</h3>
@@ -297,7 +297,7 @@ export default function Home() {
             <div className="max-w-xs md:max-w-lg mx-auto p-6 bg-gray-50 rounded-lg shadow-md flex flex-col items-center">
               <div className="flex bg-gray-400 max-w-md justify-center rounded-lg hover:scale-110 transition-transform duration-300 ease-in-out cursor-pointer p-3 mb-4">
               <span className="text-white text-2xl mt-1 mr-1"><FaWhatsapp /></span>
-              < button className="text-sm md:text-2xl text-white font-semi-bold"> Message Us on WhatsApp</button>
+              < button className="text-sm md:text-2xl text-white cursor-pointer font-semi-bold"> Message Us on WhatsApp</button>
               </div>
               
 
@@ -324,11 +324,24 @@ export default function Home() {
             </div>
           </div>
 
+          <div className="flex items-center mx-auto bg-gray-100 justify-center rounded-lg p-4 mt-10 mb-4">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11149.442889936025!2d-115.95994383829627!3d36.18152361170713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c6398c31855555%3A0xca2c250302350734!2s3190%20NV-160%20Suite%20F%2C%20Pahrump%2C%20NV%2089048%2C%20USA!5e0!3m2!1sen!2sph!4v1744038868968!5m2!1sen!2sph" 
+                    width="100%"     
+                    height="450" 
+                    style={{border: "0", borderRadius: "10px", boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)"}} 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+          </div>
+
 
 
           
 
         </section>
+
+
 
       
       </>
